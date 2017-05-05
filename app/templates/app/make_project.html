@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}make_project{% endblock title %}
+
+{% block extrahead %}
+<style>
+table {
+  margin-top: 8px;
+}
+</style>
+{% endblock %}
+{% block content %}
+    <div class="jumbotron">
+      <h1>プロジェクト作成</h1>
+      <p>...</p>
+      <p><a class="btn btn-primary btn-lg" href="./select_partner.html" role="button">参画企業選択</a></p>
+      <p><a class="btn btn-primary btn-lg" href="./project_agreement.html" role="button">確認</a></p>
+      <p><a class="btn btn-primary btn-lg" href="javascript:history.back()" role="button">戻る</a></p>
+      <p><a class="btn btn-primary btn-lg" href="./corp_top.html" role="button">トップへ</a></p>
+    </div>
+{% endblock content %}
