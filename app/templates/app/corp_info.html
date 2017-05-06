@@ -13,8 +13,13 @@ table {
     <div class="jumbotron">
       <h1>企業情報入力</h1>
       <p>...</p>
-      <p><a class="btn btn-primary btn-lg" href="corp_confirm.html" role="button">確認</a></p>
+        <form action="/corp_info/" method="get">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" value="Submit" />
+        </form>
+      <p><a class="btn btn-primary btn-lg" href="corp_confirm" role="button">確認</a></p>
       <p><a class="btn btn-primary btn-lg" href="javascript:history.back()" role="button">戻る</a></p>
-      <p><a class="btn btn-primary btn-lg" href="./top.html" role="button">トップへ</a></p>
+      <p><a class="btn btn-primary btn-lg" href="./top" role="button">トップへ</a></p>
     </div>
 {% endblock content %}
